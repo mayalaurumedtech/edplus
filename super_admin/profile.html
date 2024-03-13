@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Standard - e School</title>
+  <title>Profile - e School</title>
 
   <!-- css  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
@@ -15,7 +15,6 @@
 
 <body>
   <div class="page-wrapper">
-
 
     <!-- Bootstrap NavBar -->
     <nav class="navbar navbar-expand-md navbar-dark cus-bg-primary">
@@ -30,6 +29,7 @@
       </a>
       <div class="collapse navbar-collapse" id="navbarAdmin">
         <ul class="navbar-nav ml-auto">
+
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
               aria-expanded="true">
@@ -56,7 +56,7 @@
           <li class="nav-item dropdown d-sm-block d-md-none">
             <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu1" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false"> Base Table </a>
-              <div class="dropdown-menu" aria-labelledby="smallerscreenmenu1">
+            <div class="dropdown-menu" aria-labelledby="smallerscreenmenu1">
               <a class="dropdown-item" href="institute-for.html">Institute For</a>
               <a class="dropdown-item" href="board.html">Board</a>
               <a class="dropdown-item" href="class.html">Class</a>
@@ -114,13 +114,13 @@
           </a>
 
           <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
-            class="list-group-item list-group-item-action flex-column align-items-start active-menu">
+            class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="menu-collapsed">Base Table</span>
               <span class="fas fa-angle-down ml-auto"></span>
             </div>
           </a>
-          <div id='submenu1' class="sidebar-submenu">
+          <div id='submenu1' class="collapse sidebar-submenu">
             <a href="institute-for.html" class="list-group-item list-group-item-action">
               <span class="menu-collapsed">Institute For</span>
             </a>
@@ -133,9 +133,8 @@
             <a href="medium.html" class="list-group-item list-group-item-action">
               <span class="menu-collapsed">Medium</span>
             </a>
-            <a href="standard.html" class="list-group-item list-group-item-action sub-active-menu">
+            <a href="standard.html" class="list-group-item list-group-item-action">
               <span class="menu-collapsed">Standard</span>
-              <span class="fas fa-angle-right ml-auto"></span>
             </a>
             <a href="stream.html" class="list-group-item list-group-item-action">
               <span class="menu-collapsed">Stream</span>
@@ -196,127 +195,41 @@
       </div>
       <!-- MAIN -->
       <div class="col p-4 side-content">
-        <h1 class="display-4">Create Standard</h1>
+        <!-- <h1 class="display-4 mb-3">Login</h1> -->
 
-        <div class="row">
-          <div class="col-lg-6">
-            <form class="institute" action="#">
-              <h3>Standard</h3>
-              <div class="search-box">
-                <input type="search" name="search" placeholder="Search">
-              </div>
+        <div class="login-form">
 
-              <div class="submit-btn">
-                <input type="submit" value="Submit" class="btn bg-primary-btn text-white mt-4">
-              </div>
-            </form>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="institute-form">
-              <h3>List of Standard</h3>
-
+          <div class="row">
+            <div class="col-lg-6">
               <form action="#">
-                <div class="search-box">
-                  <input type="search" name="search" placeholder="Search">
-                  <i class="fas fa-search"></i>
+                <div class="logo1">
+                  <img src="../images/form-logo.svg" alt="e school logo" class="img-fluid">
                 </div>
+    
+                <div class="form-group">
+                  <label for="exampleInputText1">Name</label>
+                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="TextHelp"
+                    placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+    
+                <button type="submit" class="btn w-40 bg-primary-btn">Submit</button>
+    
               </form>
-
-              <table class="table table-responsive-sm table-bordered institute-table mt-4">
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Standard</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Nursari</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Junior</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Senior</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>1 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>2 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>3 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>5 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>6 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>7 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>8 Standard</td>
-                    <td>
-                      <i class="fas fa-pen"></i>
-                      <i class="fas fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
+
         </div>
+
+
       </div><!-- Main Col END -->
     </div><!-- row END -->
 
