@@ -1,0 +1,18 @@
+
+
+@media (max-width: 1220px)  {
+    
+}
+
+@media (max-width: 991px)  {
+    .side-content .col-lg-6:last-child{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px)  {
+    .eschool-logo-img {
+        max-width: 160px;
+    }
+
+}

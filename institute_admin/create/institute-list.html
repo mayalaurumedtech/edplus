@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Institute List - e School</title>
+
+  <!-- css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Bootstrap NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark cus-bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarAdmin" aria-controls="navbarAdmin" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <span class="menu-collapsed">
+          <img src="../../images/logo.svg" alt="e School logo" class="img-fluid eschool-logo-img">
+        </span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarAdmin">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html"> Login</a>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="../index.html"> Dashboard</a>
+          </li>
+
+          <li class="nav-item dropdown d-sm-block d-md-none">
+            <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> Institute </a>
+            <div class="dropdown-menu" aria-labelledby="smallerscreenmenu1">
+              <a class="dropdown-item" href="../institute-admin.html">Institute Admin</a>
+              <a class="dropdown-item" href="../institute-list.html">Institute List</a>
+            </div>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="../teacher.html">Teacher</a>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="../student.html">Student</a>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="../parents.html">Parents</a>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="../banner.html"> Banner</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav><!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+      <!-- Seitenleiste -->
+      <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+        <!-- Bootstrap-Listengruppe -->
+        <ul class="list-group">
+          <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+            <small></small>
+          </li>
+
+          <a href="../index.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Dashboard</span>
+            </div>
+          </a>
+
+          <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+            class="list-group-item list-group-item-action flex-column align-items-start active-menu">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Institute</span>
+              <span class="fas fa-angle-down ml-auto"></span>
+            </div>
+          </a>
+          <div id='submenu1' class="sidebar-submenu">
+            <a href="../institute-admin.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Institute Admin</span>
+            </a>
+            <a href="../institute-list.html" class="list-group-item list-group-item-action sub-active-menu">
+              <span class="menu-collapsed">Institute List</span>
+              <span class="fas fa-angle-right ml-auto"></span>
+            </a>
+          </div>
+
+          <a href="../teacher.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Teacher</span>
+            </div>
+          </a>
+
+          <a href="../student.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Student</span>
+            </div>
+          </a>
+          
+          <a href="../parents.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Parents</span>
+            </div>
+          </a>
+
+          <a href="../banner.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Banner</span>
+            </div>
+          </a>
+
+        </ul><!-- List Group END-->
+      </div>
+      <!-- MAIN -->
+      <div class="col p-4 side-content">
+        <h1 class="display-4">Create Institute List</h1>
+
+        <form class="s-chapter-form" action="#">
+
+          <div class="form-row institute-list">
+
+            <div class="form-group col-md-6">
+              <label>Name : </label>
+              <input type="text" name="name" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Email Id :</label>
+              <input type="email" name="email" class="form-control" placeholder="Email Id">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Mobile Number :</label>
+              <input type="tel" name="number" class="form-control" placeholder="Mobile Number">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Address :</label>
+              <input type="text" name="address" class="form-control" placeholder="Address">
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Institute :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="InstituteCheckbox1" value="option1">
+                <label class="form-check-label" for="InstituteCheckbox1">Pre school</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="InstituteCheckbox2" value="option2">
+                <label class="form-check-label" for="InstituteCheckbox2">School</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="InstituteCheckbox3" value="option3">
+                <label class="form-check-label" for="InstituteCheckbox3">Univercity</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Board :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="BoardCheckbox1" value="option1">
+                <label class="form-check-label" for="BoardCheckbox1">CBSE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="BoardCheckbox2" value="option2">
+                <label class="form-check-label" for="BoardCheckbox2">GSEB</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="BoardCheckbox3" value="option3">
+                <label class="form-check-label" for="BoardCheckbox3">MPBSE</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Medium :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="MediumCheckbox1" value="option1">
+                <label class="form-check-label" for="MediumCheckbox1">Gujarati</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="MediumCheckbox2" value="option2">
+                <label class="form-check-label" for="MediumCheckbox2">hindi</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="MediumCheckbox3" value="option3">
+                <label class="form-check-label" for="MediumCheckbox3">english</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Class :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="ClassCheckbox1" value="option1">
+                <label class="form-check-label" for="ClassCheckbox1">Pre-Primary</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="ClassCheckbox2" value="option2">
+                <label class="form-check-label" for="ClassCheckbox2">Primary</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="ClassCheckbox3" value="option3">
+                <label class="form-check-label" for="ClassCheckbox3">Secondary</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Standard :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="StandardCheckbox1" value="option1">
+                <label class="form-check-label" for="StandardCheckbox1">Nursari</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="StandardCheckbox2" value="option2">
+                <label class="form-check-label" for="StandardCheckbox2">Junior</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="StandardCheckbox3" value="option3">
+                <label class="form-check-label" for="StandardCheckbox3">Senior</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="StandardCheckbox4" value="option4">
+                <label class="form-check-label" for="StandardCheckbox4">1 standard</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Subject :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="SubjectCheckbox1" value="option1">
+                <label class="form-check-label" for="SubjectCheckbox1">Gujarati</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="SubjectCheckbox2" value="option2">
+                <label class="form-check-label" for="SubjectCheckbox2">Science</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="SubjectCheckbox3" value="option3">
+                <label class="form-check-label" for="SubjectCheckbox3">English</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="SubjectCheckbox3" value="option3">
+                <label class="form-check-label" for="SubjectCheckbox3">Physics</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="SubjectCheckbox4" value="option4">
+                <label class="form-check-label" for="SubjectCheckbox4">Mathematics</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Do Business Work :- </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox1" value="option1">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox1">Revision video</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox2" value="option2">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox2">Basic video</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox3" value="option3">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox3">Textbook pdf</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox4" value="option4">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox4">Notes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox5" value="option5">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox5">Student Attendance</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox6" value="option6">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox6">Exam Result</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DoBusinessWorkCheckbox7" value="option7">
+                <label class="form-check-label" for="DoBusinessWorkCheckbox7">Feed Detail</label>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="submit-btn">
+            <input type="submit" value="Submit" class="btn bg-primary-btn text-white">
+          </div>
+
+        </form>
+      </div><!-- Main Col END -->
+    </div><!-- row END -->
+
+  </div>
+
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

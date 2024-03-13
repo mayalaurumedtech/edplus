@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter - e School</title>
+
+  <!-- css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Bootstrap NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark cus-bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarAdmin" aria-controls="navbarAdmin" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <span class="menu-collapsed">
+          <img src="../images/logo.svg" alt="e School logo" class="img-fluid eschool-logo-img">
+        </span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarAdmin">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"> Login</a>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="index.html"> Dashboard</a>
+          </li>
+
+          <li class="nav-item dropdown d-sm-block d-md-none">
+            <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> Base Table </a>
+              <div class="dropdown-menu" aria-labelledby="smallerscreenmenu1">
+              <a class="dropdown-item" href="institute-for.html">Institute For</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="class.html">Class</a>
+              <a class="dropdown-item" href="medium.html">Medium</a>
+              <a class="dropdown-item" href="standard.html">Standard</a>
+              <a class="dropdown-item" href="stream.html">Stream</a>
+              <a class="dropdown-item" href="subject.html">Subject</a>
+              <a class="dropdown-item" href="do-business-with.html">Do Business With</a>
+              <a class="dropdown-item" href="chapter.html">Chapter</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown d-sm-block d-md-none">
+            <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> Institute </a>
+            <div class="dropdown-menu" aria-labelledby="smallerscreenmenu2">
+              <a class="dropdown-item" href="institute-admin.html">Institute Admin</a>
+              <a class="dropdown-item" href="institute-list.html">Institute List</a>
+            </div>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="banner.html"> Banner</a>
+          </li>
+
+          <li class="nav-item d-sm-block d-md-none">
+            <a class="nav-link" href="admin.html"> Admin</a>
+          </li>
+
+          <li class="nav-item dropdown d-sm-block d-md-none">
+            <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu3" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> Setting </a>
+            <div class="dropdown-menu" aria-labelledby="smallerscreenmenu3">
+              <a class="dropdown-item" href="role.html">Role</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav><!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+      <!-- Seitenleiste -->
+      <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+        <!-- Bootstrap-Listengruppe -->
+        <ul class="list-group">
+          <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+            <small></small>
+          </li>
+
+          <a href="index.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Dashboard</span>
+            </div>
+          </a>
+
+          <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+            class="list-group-item list-group-item-action flex-column align-items-start active-menu">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Base Table</span>
+              <span class="fas fa-angle-down ml-auto"></span>
+            </div>
+          </a>
+          <div id='submenu1' class="sidebar-submenu">
+            <a href="institute-for.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Institute For</span>
+            </a>
+            <a href="board.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Board</span>
+            </a>
+            <a href="class.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Class</span>
+            </a>
+            <a href="medium.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Medium</span>
+            </a>
+            <a href="standard.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Standard</span>
+            </a>
+            <a href="stream.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Stream</span>
+            </a>
+            <a href="subject.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Subject</span>
+            </a>
+            <a href="do-business-with.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Do Business With</span>
+              <span class="fas fa-angle-right ml-auto"></span>
+            </a>
+            <a href="chapter.html" class="list-group-item list-group-item-action sub-active-menu">
+              <span class="menu-collapsed">Chapter</span>
+            </a>
+          </div>
+
+          <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+            class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Institute</span>
+              <span class="fas fa-angle-down ml-auto"></span>
+            </div>
+          </a>
+          <div id='submenu2' class="collapse sidebar-submenu">
+            <a href="institute-admin.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Institute Admin</span>
+            </a>
+            <a href="institute-list.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Institute List</span>
+            </a>
+          </div>
+
+          <a href="banner.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Banner</span>
+            </div>
+          </a>
+
+          <a href="admin.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Admin</span>
+            </div>
+          </a>
+
+          <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
+            class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="menu-collapsed">Setting</span>
+              <span class="fas fa-angle-down ml-auto"></span>
+            </div>
+          </a>
+          <div id='submenu3' class="collapse sidebar-submenu">
+            <a href="role.html" class="list-group-item list-group-item-action">
+              <span class="menu-collapsed">Role</span>
+            </a>
+          </div>
+
+        </ul><!-- List Group END-->
+      </div>
+      <!-- MAIN -->
+      <div class="col p-4 side-content">
+        <h1 class="display-4">Chapter</h1>
+
+        <div class="row">
+          <!-- table -->
+          <div class="col-lg-12 mt-5">
+            <div class="create-title-btn">
+              <h4 class="mb-0">List of Chapter</h4>
+            <a href="create/chapter.html" class="btn text-white btn-rmv2">Create Chapter</a>
+            </div>
+            <table class="table table-responsive-sm table-bordered institute-table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Standard</th>
+                  <th scope="col">Subjects</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Nursery (English)</td>
+                  <td>Rhymes, Story telling</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="7" scope="row">2</th>
+                  <td rowspan="7">7 Standard (State Board, Gujarati) </td>
+                  <td>Gujarati</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hindi</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>English</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Maths</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Science</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Social Science</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sanskrit</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="6" scope="row">3</th>
+                  <td rowspan="6">7 Standard (CBSE Board) </td>
+                  <td>Mathematics</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Science</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Maths Exemplar</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Science Exemplar</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>English</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Social Science</td>
+                  <td>
+                    <a type="button" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-trash-alt"></i>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div><!-- Main Col END -->
+    </div><!-- row END -->
+
+  </div>
+
+  <!-- js -->
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
