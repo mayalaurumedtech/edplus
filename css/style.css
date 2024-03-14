@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 :root {
@@ -54,10 +55,15 @@ a {
  .navbar-expand-md .navbar-nav .dropdown-menu{
     left: -100px;
     top: -100px;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
 }
  .navbar-expand-md .navbar-nav .dropdown-menu.show{
     top: 50px;
+    right: 0;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
 }
 
@@ -105,8 +111,12 @@ a {
 #sidebar-container .list-group .sidebar-submenu a {
     height: 45px;
     padding-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .sidebar-submenu {
@@ -158,6 +168,8 @@ a {
     border: 1.5px solid var(--primary-color);
     color: var(--white-color);
     font-weight: 600;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
 }
 
@@ -186,8 +198,12 @@ a {
 }
 
 .form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .side-content {
@@ -223,7 +239,8 @@ h3 span {
     border: none;
     position: relative;
     margin-bottom: 30px;
-    box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+    -webkit-box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+            box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
 
 .dashboard .card h3 {
@@ -232,21 +249,29 @@ h3 span {
 }
 
 .dashboard .l-bg-sky-dark {
+    background: -webkit-gradient(linear, left top, right top, from(#324244), to(#17a2b8)) !important;
+    background: -o-linear-gradient(left, #324244, #17a2b8) !important;
     background: linear-gradient(to right, #324244, #17a2b8) !important;
     color: #fff;
 }
 
 .dashboard .l-bg-blue-dark {
+    background: -webkit-gradient(linear, left top, right top, from(#373b44), to(#4286f4)) !important;
+    background: -o-linear-gradient(left, #373b44, #4286f4) !important;
     background: linear-gradient(to right, #373b44, #4286f4) !important;
     color: #fff;
 }
 
 .dashboard .l-bg-green-dark {
+    background: -webkit-gradient(linear, left top, right top, from(#0a504a), to(#38ef7d)) !important;
+    background: -o-linear-gradient(left, #0a504a, #38ef7d) !important;
     background: linear-gradient(to right, #0a504a, #38ef7d) !important;
     color: #fff;
 }
 
 .dashboard .l-bg-orange-dark {
+    background: -webkit-gradient(linear, left top, right top, from(#a86008), to(#ffba56)) !important;
+    background: -o-linear-gradient(left, #a86008, #ffba56) !important;
     background: linear-gradient(to right, #a86008, #ffba56) !important;
     color: #fff;
 }
@@ -289,31 +314,44 @@ h3 span {
 }
 
 .card-statistic-3:hover .card-icon-large>i {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
 }
 
 .card-link:hover>i {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
 }
 
 .dashboard .l-bg-cyan {
+    background: -o-linear-gradient(315deg, #289cf5, #84c0ec) !important;
     background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
     color: #fff;
 }
 
 .dashboard .l-bg-green {
+    background: -o-linear-gradient(315deg, #23bdb8 0%, #43e794 100%) !important;
     background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
     color: #fff;
 }
 
 .dashboard .l-bg-orange {
+    background: -webkit-gradient(linear, left top, right top, from(#f9900e), to(#ffba56)) !important;
+    background: -o-linear-gradient(left, #f9900e, #ffba56) !important;
     background: linear-gradient(to right, #f9900e, #ffba56) !important;
     color: #fff;
 }
 
 .dashboard .l-bg-cyan {
+    background: -o-linear-gradient(315deg, #289cf5, #84c0ec) !important;
     background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
     color: #fff;
 }
@@ -337,8 +375,12 @@ h3 span {
 }
 
 .holiday-card table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: var(--light-color);
     margin-bottom: 10px;
     padding: 5px 10px;
@@ -356,6 +398,8 @@ h3 span {
 /* announcement */
 .announcement {
     margin-top: 40px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -390,8 +434,12 @@ h3 span {
 .search-box {
     height: 50px;
     padding: 8px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: var(--white-color);
     border: 1px solid #000;
     border-radius: 5px;
@@ -399,8 +447,12 @@ h3 span {
 
 
 .search-box-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: var(--white-color);
     position: relative;
     width: 100%;
@@ -408,7 +460,9 @@ h3 span {
     border: 1px solid #ced4da;
     border-radius: 5px;
     outline: none;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .search-box-2 input {
@@ -460,9 +514,15 @@ form.institute {
 }
 
 .login-form .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -491,7 +551,11 @@ form.institute {
     border: 1.5px solid var(--primary-color);
     border-radius: 5px;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     padding-right: 7px;
@@ -619,13 +683,18 @@ form.institute {
 .form-control:focus {
     outline: 0;
     border-color: var(--gray-color);
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 
 .btn-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .form-row .input-group-text {
@@ -652,15 +721,26 @@ form.institute {
 }
 
 .create-admin .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .create-title-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 15px;
     margin-bottom: -10px;
 }

@@ -60,16 +60,17 @@ $(document).ready(function () {
 
 // Reset Password start 
 $(document).ready(function () {
-  $("#show_hide_password a").on('click', function (event) {
+  $("[id^='show_hide_password'] a").on('click', function (event) {
     event.preventDefault();
-    if ($('#show_hide_password input').attr("type") == "text") {
-      $('#show_hide_password input').attr('type', 'password');
-      $('#show_hide_password i').addClass("fa-eye-slash");
-      $('#show_hide_password i').removeClass("fa-eye");
-    } else if ($('#show_hide_password input').attr("type") == "password") {
-      $('#show_hide_password input').attr('type', 'text');
-      $('#show_hide_password i').removeClass("fa-eye-slash");
-      $('#show_hide_password i').addClass("fa-eye");
+    var id = $(this).closest('.input-group').attr('id'); // Get the ID of the parent input group
+    var input = $('#' + id + ' input'); // Find the input element within the parent input group
+    var icon = $('#' + id + ' i'); // Find the icon element within the parent input group
+    if (input.attr("type") == "text") {
+      input.attr('type', 'password');
+      icon.addClass("fa-eye-slash").removeClass("fa-eye");
+    } else if (input.attr("type") == "password") {
+      input.attr('type', 'text');
+      icon.removeClass("fa-eye-slash").addClass("fa-eye");
     }
   });
 });
