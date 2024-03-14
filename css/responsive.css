@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 991px)  {
-    .side-content .col-lg-6:last-child{
+    .side-content .col-lg-6 .institute-form{
         margin-top: 50px;
     }
 }
