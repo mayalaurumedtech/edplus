@@ -32,6 +32,10 @@ a {
     background-color: var(--gray-color) !important;
 }
 
+.nav-profile-text {
+    padding-right: 2rem;
+}
+
 #body-row {
     margin-left: 0;
     margin-right: 0;
