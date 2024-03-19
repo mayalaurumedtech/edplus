@@ -203,7 +203,7 @@ a {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-evenly;
 }
 
 .side-content {
@@ -513,28 +513,6 @@ form.institute {
     background-color: var(--light-color);
 }
 
-.login-form .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-}
-
-.login-form .cus-height{
-    height: 100vh;
-}
-
-.login-form .row .col-lg-6 {
-    background-color: var(--white-color);
-    padding: 40px;
-}
-
 
 .login-form .form-group {
     text-align: start !important;
@@ -748,4 +726,19 @@ form.institute {
 .create-status {
     height: auto;
     padding: 14px 10px;
+}
+
+.login-form form {
+    width: 500px;
+    background-color: var(--white-color);
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
