@@ -742,3 +742,7 @@ form.institute {
     justify-content: center;
     height: 100vh;
 }
+
+.login-form form .logo1 img {
+    margin-bottom: 20px;
+}

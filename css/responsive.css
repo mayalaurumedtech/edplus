@@ -1,24 +1,39 @@
-
-
-@media (min-width: 2304px)  {
+@media (min-width: 2304px) {
     .nav-profile-text {
         padding-right: 4rem;
     }
 }
 
-@media (max-width: 1440px)  {
-    
-}
+@media (max-width: 1440px) {}
 
-@media (max-width: 991px)  {
-    .side-content .col-lg-6 .institute-form{
+@media (max-width: 991px) {
+    .side-content .col-lg-6 .institute-form {
         margin-top: 50px;
     }
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     .eschool-logo-img {
         max-width: 160px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .login-form form {
+        width: 400px;
+    }
+
+    .login-form form .logo1 img {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .login-form form {
+        width: 300px;
     }
 
 }
