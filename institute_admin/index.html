@@ -27,8 +27,8 @@
           <img src="../images/logo.svg" alt="e School logo" class="img-fluid eschool-logo-img">
         </span>
       </a>
-      <div class="collapse navbar-collapse" id="navbarAdmin">
-        <ul class="navbar-nav ml-auto">
+
+      <!-- <ul class="navbar-nav ml-auto">
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
               aria-expanded="true">
@@ -77,14 +77,16 @@
             <a class="nav-link" href="banner.html"> Banner</a>
           </li>
 
-        </ul>
-      </div>
-    </nav><!-- NavBar END -->
-    <!-- Bootstrap row -->
-    <div class="row" id="body-row">
-      <!-- Seitenleiste -->
-      <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
-        <!-- Bootstrap-Listengruppe -->
+        </ul> -->
+  </div>
+  </nav>
+  <!-- NavBar END -->
+  <!-- Bootstrap row -->
+  <div class="row" id="body-row">
+    <!-- Seitenleiste -->
+    <div id="sidebar-container" class="sidebar-expanded ">
+      <!-- Bootstrap-Listengruppe -->
+      <div class="collapse navbar-collapse" id="navbarAdmin">
         <ul class="list-group">
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
             <small></small>
@@ -136,180 +138,181 @@
             </div>
           </a>
 
-        </ul><!-- List Group END-->
+        </ul>
+      </div><!-- List Group END-->
+    </div>
+    <!-- MAIN -->
+    <div class="col p-4 side-content">
+      <h1 class="display-4">Dashboard</h1>
+
+      <!-- dashboard card start  -->
+      <div class="row dashboard">
+
+        <div class="col-xl-4 col-lg-4">
+          <div class="card l-bg-blue-dark">
+            <div class="card-statistic-3 p-4">
+              <div class="card-icon card-icon-large"><i class="fas fa-chalkboard-teacher"></i></div>
+              <div class="mb-4">
+                <h5 class="card-title mb-0">Total Teachers</h5>
+              </div>
+              <div class="row align-items-center mb-3 d-flex">
+                <div class="col-8">
+                  <h3 class="d-flex align-items-center mb-0">
+                    8
+                  </h3>
+                </div>
+              </div>
+              <a href="#" class="card-link">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4">
+          <div class="card l-bg-green-dark">
+            <div class="card-statistic-3 p-4">
+              <div class="card-icon card-icon-large"><i class="fas fa-user-graduate"></i></div>
+              <div class="mb-4">
+                <h5 class="card-title mb-0">Total Students</h5>
+              </div>
+              <div class="row align-items-center mb-3 d-flex">
+                <div class="col-8">
+                  <h3 class="d-flex align-items-center mb-0">
+                    373
+                  </h3>
+                </div>
+              </div>
+              <a href="#" class="card-link">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4">
+          <div class="card l-bg-orange-dark">
+            <div class="card-statistic-3 p-4">
+              <div class="card-icon card-icon-large"><i class="fas fa-male"></i></div>
+              <div class="mb-4">
+                <h5 class="card-title mb-0">Total Guardians</h5>
+              </div>
+              <div class="row align-items-center mb-3 d-flex">
+                <div class="col-8">
+                  <h3 class="d-flex align-items-center mb-0">
+                    358
+                  </h3>
+                </div>
+              </div>
+              <a href="#" class="card-link">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <!-- MAIN -->
-      <div class="col p-4 side-content">
-        <h1 class="display-4">Dashboard</h1>
+      <!-- dashboard card end  -->
 
-        <!-- dashboard card start  -->
-        <div class="row dashboard">
-          
-          <div class="col-xl-4 col-lg-4">
-            <div class="card l-bg-blue-dark">
-              <div class="card-statistic-3 p-4">
-                <div class="card-icon card-icon-large"><i class="fas fa-chalkboard-teacher"></i></div>
-                <div class="mb-4">
-                  <h5 class="card-title mb-0">Total Teachers</h5>
-                </div>
-                <div class="row align-items-center mb-3 d-flex">
-                  <div class="col-8">
-                    <h3 class="d-flex align-items-center mb-0">
-                      8
-                    </h3>
-                  </div>
-                </div>
-                <a href="#" class="card-link">More info <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4">
-            <div class="card l-bg-green-dark">
-              <div class="card-statistic-3 p-4">
-                <div class="card-icon card-icon-large"><i class="fas fa-user-graduate"></i></div>
-                <div class="mb-4">
-                  <h5 class="card-title mb-0">Total Students</h5>
-                </div>
-                <div class="row align-items-center mb-3 d-flex">
-                  <div class="col-8">
-                    <h3 class="d-flex align-items-center mb-0">
-                      373
-                    </h3>
-                  </div>
-                </div>
-                <a href="#" class="card-link">More info <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4">
-            <div class="card l-bg-orange-dark">
-              <div class="card-statistic-3 p-4">
-                <div class="card-icon card-icon-large"><i class="fas fa-male"></i></div>
-                <div class="mb-4">
-                  <h5 class="card-title mb-0">Total Guardians</h5>
-                </div>
-                <div class="row align-items-center mb-3 d-flex">
-                  <div class="col-8">
-                    <h3 class="d-flex align-items-center mb-0">
-                      358
-                    </h3>
-                  </div>
-                </div>
-                <a href="#" class="card-link">More info <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- dashboard card end  -->
-
-        <!-- Holiday & Leaves cards start -->
-        <div class="h-l-card">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="holiday-card bg-w-background">
-                <h3>Holiday</h3>
-                <table>
-                  <tr>
-                    <th>Dhuleti</th>
-                    <td>25 - Mar</td>
-                  </tr>
-                  <tr>
-                    <th>Good Friday</th>
-                    <td>29 - Mar</td>
-                  </tr>
-                  <tr>
-                    <th>Ram Navami</th>
-                    <td>17 - Apr</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="leaves-card bg-w-background">
-                <h3>Leaves</h3>
-                <div class="form-group">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Today</option>
-                    <option>Tomorrow</option>
-                    <option>Upcoming</option>
-                  </select>
-                </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Holiday & Leaves cards end -->
-
-        <!-- Announcement list start -->
-        <div class="announcement bg-w-background pb-5">
-          <div class="row">
-            <div class="col-lg-12">
-              <h3>Announcement List</h3>
-
-              <table class="table table-responsive-lg">
-                <thead class="thead-primary-color">
-                  <tr>
-                    <th>No</th>
-                    <th>Date</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td class="date">15 <span>feb</span></td>
-                    <td class="standard">10 <span>Standard</span></td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
-                  </tr>
-
-                  <tr>
-                    <td>2</td>
-                    <td class="date">12 <span>feb</span></td>
-                    <td class="standard">3 <span>Standard</span> </td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
-                  </tr>
-
-                  <tr>
-                    <td>3</td>
-                    <td class="date">8 <span>feb</span></td>
-                    <td class="standard">All <span>Standard</span></td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
-                  </tr>
-
-                  <tr>
-                    <td>4</td>
-                    <td class="date">5 <span>feb</span></td>
-                    <td class="standard">12 <span>Standard</span>(Science)</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
-                  </tr>
-
-                  <tr>
-                    <td>5</td>
-                    <td class="date">4 <span>feb</span></td>
-                    <td class="standard">11 <span>Standard</span> (Comm)</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
-                  </tr>
-
-                  <tr>
-                    <td>6</td>
-                    <td class="date">1 <span>feb</span></td>
-                    <td class="standard">5 <span>Standard</span></td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
-                  </tr>
-                </tbody>
+      <!-- Holiday & Leaves cards start -->
+      <div class="h-l-card">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="holiday-card bg-w-background">
+              <h3>Holiday</h3>
+              <table>
+                <tr>
+                  <th>Dhuleti</th>
+                  <td>25 - Mar</td>
+                </tr>
+                <tr>
+                  <th>Good Friday</th>
+                  <td>29 - Mar</td>
+                </tr>
+                <tr>
+                  <th>Ram Navami</th>
+                  <td>17 - Apr</td>
+                </tr>
               </table>
             </div>
           </div>
+          <div class="col-lg-6">
+            <div class="leaves-card bg-w-background">
+              <h3>Leaves</h3>
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Today</option>
+                  <option>Tomorrow</option>
+                  <option>Upcoming</option>
+                </select>
+              </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <!-- Announcement list end -->
+      </div>
+      <!-- Holiday & Leaves cards end -->
+
+      <!-- Announcement list start -->
+      <div class="announcement bg-w-background pb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Announcement List</h3>
+
+            <table class="table table-responsive-lg">
+              <thead class="thead-primary-color">
+                <tr>
+                  <th>No</th>
+                  <th>Date</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="date">15 <span>feb</span></td>
+                  <td class="standard">10 <span>Standard</span></td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td class="date">12 <span>feb</span></td>
+                  <td class="standard">3 <span>Standard</span> </td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td class="date">8 <span>feb</span></td>
+                  <td class="standard">All <span>Standard</span></td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+                  <td class="date">5 <span>feb</span></td>
+                  <td class="standard">12 <span>Standard</span>(Science)</td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td class="date">4 <span>feb</span></td>
+                  <td class="standard">11 <span>Standard</span> (Comm)</td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
+                </tr>
+
+                <tr>
+                  <td>6</td>
+                  <td class="date">1 <span>feb</span></td>
+                  <td class="standard">5 <span>Standard</span></td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Announcement list end -->
 
 
-      </div><!-- Main Col END -->
-    </div><!-- row END -->
+    </div><!-- Main Col END -->
+  </div><!-- row END -->
 
   </div>
 

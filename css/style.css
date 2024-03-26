@@ -95,9 +95,15 @@ a {
 
 /* Sidebar sizes when expanded and expanded */
 .sidebar-expanded {
-    width: 230px;
+    /* width: 230px; */
 }
-
+#navbarAdmin{
+    width: 230px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 9999;
+}
 .sidebar-collapsed {
     width: 60px;
 }
